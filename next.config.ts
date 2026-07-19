@@ -1,10 +1,6 @@
-import path from "node:path";
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  // Keep build artifacts separate from a stale OneDrive-synced cache.
-  distDir: ".next-build",
-  outputFileTracingRoot: path.join(__dirname),
-};
+// Vercel requires the standard Next.js `.next` output directory.
+const nextConfig: NextConfig = {};
 
 export default nextConfig;
