@@ -28,11 +28,11 @@ None.
 
 ## Last completed mission
 
-Restored standard Next.js `.next` output so Vercel can deploy the TRUSTed Digital Architecture update.
+Restored standard Next.js `.next` output and verified the TRUSTed Digital Architecture production deployment is Ready on Vercel.
 
 ## Current active mission
 
-Verify the Vercel production deployment for the current `main` commit.
+Add automated lint and component-test baselines for the public marketing site.
 
 ## Next Ready mission
 
@@ -43,6 +43,7 @@ Perform a broader manual accessibility and responsive visual QA pass for the reb
 - Typecheck: passed locally with `npx tsc --noEmit`.
 - Build: passed locally with `npm run build` on Next.js 15.5.20 using the default `.next` directory.
 - Production homepage: verified at `https://trusted-web-architecture.vercel.app/`.
+- Vercel production deployment: Ready for commit `72677a8`.
 - Lint: not configured.
 - Tests: not configured.
 

@@ -2,8 +2,8 @@
 
 ## Active mission
 
-Verify the Vercel production deployment for the current `main` commit.
+Add automated lint and component-test baselines for the public marketing site.
 
 ## Next Ready mission
 
-Add automated lint and component-test baselines for the public marketing site.
+Perform a broader manual accessibility and responsive visual QA pass for the rebranded homepage.
