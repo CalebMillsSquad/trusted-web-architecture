@@ -27,7 +27,7 @@ TRUSTed Digital Architecture is implemented as a responsive Next.js public websi
 
 ## Current blockers
 
-None.
+The active Codex workspace keeps the legacy local folder handle open, so Windows will not rename `TRUSTed Website Architect` to `TRUSTed Digital Architecture` during this task. GitHub, Vercel, package metadata, public branding, and URLs are already aligned. The local folder rename can be completed after closing this workspace.
 
 ## Last completed mission
 
@@ -35,7 +35,7 @@ Implemented the founder-approved full TRUSTed Digital Architecture public websit
 
 ## Current active mission
 
-Complete founder review and production deployment verification under the TRUSTed Digital Architecture identity.
+Complete the local folder rename after the active workspace releases its Windows file handle.
 
 ## Next Ready mission
 
@@ -49,6 +49,7 @@ Perform a route-by-route accessibility and responsive visual QA pass after found
 - Build: 31 static pages generated successfully.
 - Local HTTP verification: 12 representative routes returned 200 with the correct brand.
 - Interactive architecture panel: verified in browser.
+- Production: verified at `https://trusted-digital-architecture.vercel.app`.
 
 ## Local preview
 

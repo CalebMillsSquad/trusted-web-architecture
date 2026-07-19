@@ -36,6 +36,9 @@ Contact and website-audit forms are explicitly non-functional previews. No authe
 
 Vercel uses the repository root, Next.js framework preset, `npm install`, `npm run build`, and the default `.next` output directory. No environment variables or custom-domain changes are required.
 
+- GitHub: `https://github.com/CalebMillsSquad/trusted-digital-architecture`
+- Production: `https://trusted-digital-architecture.vercel.app`
+
 ## Repository continuity
 
 - `PROJECT_STATUS.md` records current state and verification evidence.
