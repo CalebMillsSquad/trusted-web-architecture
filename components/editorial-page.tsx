@@ -16,7 +16,7 @@ function PreviewForm({ type }: { type: "contact" | "audit" }) {
 }
 
 export function EditorialPage({ page }: { page: PublicPage }) {
-  return <><SiteHeader /><main>
+  return <><SiteHeader /><main id="main-content">
     <section className="editorial-hero"><div><p className="eyebrow">{page.eyebrow}</p><h1>{page.title}</h1><p>{page.description}</p><Link className="button button-dark" href={emailHref}>{page.cta} <span>→</span></Link></div><div className="editorial-diagram" aria-hidden="true"><i /><i /><i /><span>STRATEGY</span><span>SYSTEMS</span><span>OPERATIONS</span></div></section>
     {page.sections.map((section, index) => <section className={`content-section section-pad ${index % 2 ? "content-tint" : ""}`} key={`${section.title}-${index}`}>
       <div className="content-heading">{section.eyebrow && <p className="eyebrow">{section.eyebrow}</p>}<h2>{section.title}</h2>{section.body?.map((text) => <p key={text}>{text}</p>)}</div>

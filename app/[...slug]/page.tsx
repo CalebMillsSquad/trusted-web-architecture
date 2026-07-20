@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: RouteProps): Promise<Metadata
   const { slug } = await params;
   const page = pages[slug.join("/")];
   if (!page) return {};
-  return { title: `${page.eyebrow} | TRUSTed Digital Architecture`, description: page.description };
+  return { title: `${page.metaTitle ?? page.title} | TRUSTed Digital Architecture`, description: page.description };
 }
 
 export default async function PublicRoute({ params }: RouteProps) {

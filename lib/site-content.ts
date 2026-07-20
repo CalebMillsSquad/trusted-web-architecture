@@ -1,6 +1,6 @@
 export type ContentCard = { title: string; description: string; href?: string; status?: string };
 export type ContentSection = { eyebrow?: string; title: string; body?: string[]; items?: string[]; cards?: ContentCard[]; notice?: string };
-export type PublicPage = { eyebrow: string; title: string; description: string; sections: ContentSection[]; cta: string; form?: "contact" | "audit" };
+export type PublicPage = { eyebrow: string; metaTitle?: string; title: string; description: string; sections: ContentSection[]; cta: string; form?: "contact" | "audit" };
 
 export const services: ContentCard[] = [
   { title: "Website Architecture", description: "Premium, conversion-focused websites designed around credibility, customer journeys, performance, accessibility, and future integration.", href: "/services/website-architecture" },
@@ -47,7 +47,7 @@ export const processStages = [
   ["Optimize", "Review verified outcomes, address friction, improve workflows, and plan the next stage."],
 ] as const;
 
-const servicePage = (eyebrow: string, title: string, description: string, listTitle: string, items: string[], insightTitle: string, insight: string, cta: string): PublicPage => ({ eyebrow, title, description, sections: [{ title: listTitle, items }, { eyebrow: "Architecture First", title: insightTitle, body: [insight] }], cta });
+const servicePage = (eyebrow: string, title: string, description: string, listTitle: string, items: string[], insightTitle: string, insight: string, cta: string): PublicPage => ({ eyebrow, metaTitle: eyebrow, title, description, sections: [{ title: listTitle, items }, { eyebrow: "Architecture First", title: insightTitle, body: [insight] }], cta });
 const solutionPage = (title: string, description: string, items: string[], cta: string): PublicPage => ({ eyebrow: "Solution", title, description, sections: [{ eyebrow: "Common Capabilities", title: "Designed around the complete workflow.", items }, { title: "Discovery before commitment.", body: ["Final functionality depends on approved scope, platform access, technical feasibility, security requirements, and the systems already in use."] }], cta });
 
 export const pages: Record<string, PublicPage> = {

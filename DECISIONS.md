@@ -19,3 +19,7 @@ Founder approved the complete TRUSTed Digital Architecture information architect
 ## 2026-07-19 — Project identity alignment
 
 Founder approved aligning the local folder, package, GitHub repository, and Vercel project naming to TRUSTed Digital Architecture while preserving the existing repository history and deployment strategy.
+
+## 2026-07-19 — Mission-driven repository operating model
+
+Founder approved a durable repository operating system centered on `AGENTS.md`, one coherent active `MISSION.md`, current-truth status, an ordered backlog, and a living execution plan. Codex should continue across routine internal milestones without repeated approval and stop only for mission completion, a genuine blocker, or a founder-level product, security, privacy, legal, cost, deployment, public-claim, destructive-migration, or product-boundary decision.

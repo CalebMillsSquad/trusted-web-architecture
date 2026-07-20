@@ -1,61 +1,80 @@
 # Project Status
 
-## Current build phase
+Last updated: 2026-07-19
 
-Full public-site architecture implementation and founder review.
+## Product
 
-## Current application status
+TRUSTed Digital Architecture is a founder-led public marketing website for premium website architecture, custom software, AI-system planning, automation, integrations, learning platforms, and connected business systems.
 
-TRUSTed Digital Architecture is implemented as a responsive Next.js public website with a premium editorial design system, centralized typed content, shared navigation/footer, and 31 statically generated pages.
+## Current Phase
 
-## What works
+Founder Review
 
-- Homepage positions TRUSTed as a digital architecture and software firm.
-- Nine service pages and eight solution pages are implemented.
-- Products, industries, process, about, contact, website-audit, privacy, and terms routes are implemented.
-- Unfinished products and intake prototypes carry accurate status and limitation notices.
-- Dedicated local port `3023` and guarded Windows start/stop launchers are configured.
-- Vercel uses standard Next.js `.next` output.
+## Active Mission
 
-## What remains incomplete
+Public Website Production Readiness and Founder Review
 
-- Contact and website-audit interfaces are non-functional previews by design.
-- External integrations, AI providers, authentication, databases, payments, and uploads are not included.
-- Qualified legal review remains recommended before activating data collection or relying on legal pages.
-- Founder visual and copy review is pending across the complete route set.
-- Production dependency audit reports two moderate PostCSS advisories inherited through Next.js; the suggested automated fix would incorrectly downgrade Next.js and was not applied.
+## Current Milestone
 
-## Current blockers
+Release validation is complete; the verified site is ready for founder visual and copy review.
 
-The active Codex workspace keeps the legacy local folder handle open, so Windows will not rename `TRUSTed Website Architect` to `TRUSTed Digital Architecture` during this task. GitHub, Vercel, package metadata, public branding, and URLs are already aligned. The local folder rename can be completed after closing this workspace.
+## Overall Mission Progress
 
-## Last completed mission
+Complete. All defined production-readiness acceptance criteria have been implemented and verified. Further public-facing refinement depends on founder review feedback.
 
-Implemented the founder-approved full TRUSTed Digital Architecture public website and project-local preview workflow.
+## Verified Working
 
-## Current active mission
+- Next.js App Router application with 31 generated static pages, including framework pages
+- Homepage and all 27 approved internal public routes return HTTP 200
+- All 28 public routes have one H1 and a unique descriptive page title
+- Centralized typed content, reusable page shell, shared navigation, and semantic footer navigation
+- Skip navigation, visible focus styles, current-page navigation state, and native keyboard-operable architecture buttons
+- Responsive homepage and internal-page reflow without horizontal document overflow at 390px, 768px, and 1440px
+- Interactive ten-layer architecture selector without mobile or tablet control overlap
+- Improved ivory-background text contrast while preserving the approved visual system
+- Honest product status labels and non-functional intake-preview notices
+- Clean browser console on a fresh local session
+- Guarded Windows start/stop launchers on dedicated port `3023`
+- GitHub repository and production Vercel project under the TRUSTed Digital Architecture identity
 
-Complete the local folder rename after the active workspace releases its Windows file handle.
+## In Progress
 
-## Next Ready mission
+Founder visual and copy review.
 
-Perform a route-by-route accessibility and responsive visual QA pass after founder content approval.
+## Remaining
 
-## Verification status
+- Founder review of the homepage, representative service and solution pages, products, contact preview, and mobile navigation
+- Local directory rename after the active Codex workspace releases its Windows handle
+- Separate founder decisions before secure intake, analytics, live integrations, or custom-domain work
 
-- Lint: passed.
-- Typecheck: passed.
-- Tests: 4 passed.
-- Build: 31 static pages generated successfully.
-- Local HTTP verification: 12 representative routes returned 200 with the correct brand.
-- Interactive architecture panel: verified in browser.
-- Production: verified at `https://trusted-digital-architecture.vercel.app`.
+## Known Issues
 
-## Local preview
+- **Low:** The local directory still uses the legacy `TRUSTed Website Architect` name because the active Codex workspace holds a Windows directory handle. This does not affect source, GitHub, package, or Vercel identity.
+- **Low:** Contact and website-audit forms are intentionally non-functional previews pending separately approved secure infrastructure.
+- **Low:** `npm audit --omit=dev` reports two moderate PostCSS advisories inherited through Next.js. The suggested forced fix would install an incompatible older Next.js release and was not applied.
+- **Review required:** Privacy and terms copy require qualified legal review before activating data collection or relying on them for materially different commercial workflows.
 
-- URL: `http://localhost:3023`
-- Launcher: `START_APP.bat`
+## Blockers
 
-## Last updated
+No technical blocker. Founder visual and copy feedback is required before making subjective public-facing refinements or selecting the next product mission.
 
-2026-07-19
+## Verification Status
+
+- Lint: passed
+- Typecheck: passed with TypeScript strict mode enabled
+- Tests: passed, 6 tests
+- Production build: passed, 31 generated static pages
+- Local smoke checks: passed on all 28 public routes; 28 unique titles and one H1 per route
+- Responsive browser checks: passed at 390px, 768px, and 1440px with no horizontal overflow or architecture-panel overlap
+- Browser console: no errors or warnings in a fresh local session
+
+## Local Development
+
+- Run command: `npm run dev`
+- Assigned port: `3023`
+- Local URL: `http://localhost:3023`
+- Launcher: `START_APP.bat` is present and verified; `STOP_APP.bat` stops only a verified project process
+
+## Next Internal Milestone
+
+Apply founder-approved visual and copy feedback, then repeat the complete validation suite.

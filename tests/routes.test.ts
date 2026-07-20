@@ -34,6 +34,19 @@ describe("public website content", () => {
   });
 
   it("labels every unfinished product accurately", () => {
-    expect(products.every((product) => Boolean(product.status))).toBe(true);
+    const approvedStatuses = ["In development", "Private prototype", "Early access planned", "Internal product initiative", "Planned"];
+    expect(products.every((product) => product.status && approvedStatuses.includes(product.status))).toBe(true);
+  });
+
+  it("provides unique page titles and complete descriptions", () => {
+    const pageTitles = Object.values(pages).map((page) => page.metaTitle ?? page.title);
+    expect(new Set(pageTitles).size).toBe(pageTitles.length);
+    expect(Object.values(pages).every((page) => page.description.length >= 50)).toBe(true);
+  });
+
+  it("keeps every primary navigation destination in the route registry", () => {
+    for (const [, href] of primaryNavigation) {
+      expect(pages[href.slice(1)]).toBeDefined();
+    }
   });
 });
