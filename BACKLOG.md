@@ -8,6 +8,11 @@
 
 - After founder approvals, implement the approved production limitation package, beginning with quota readiness and the authoritative lead and notification workflow.
 
+## Verified in this pass
+
+- Added canonical metadata, Open Graph identity, structured data, robots, sitemap, and conservative security headers.
+- Lead endpoint failure semantics now include a request id and explicit storage/email statuses without persisting or exposing contact data.
+
 ## Later
 
 - Add provider-confirmed email notifications and authoritative lead storage only after privacy, retention, recovery, access, and cost approval.

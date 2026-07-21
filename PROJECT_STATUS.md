@@ -1,5 +1,9 @@
 # Project Status
 
+## Post-launch readiness audit (2026-07-21)
+
+Added canonical metadata, Open Graph identity, Organization/WebSite JSON-LD, generated robots and sitemap routes, and conservative security headers. The assistant remains safe but is limited by the OpenAI project `insufficient_quota` response. Lead intake remains disabled without approved durable storage and confirmed notification delivery; its unavailable response now includes a request identifier and explicit storage/email statuses. No analytics or error-monitoring provider is enabled, and appointments remain requests until a calendar connection exists. See `FOUNDER_REVIEW.md`.
+
 Last updated: 2026-07-21
 
 ## Current Phase
