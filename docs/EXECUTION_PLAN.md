@@ -4,31 +4,32 @@ Last updated: 2026-07-21
 
 ## Active Mission
 
-Founder-Approved TRUSTed AI Business Architect
+Founder-Approved Production Domain and Vercel Launch
 
 ## Milestones
 
-- [x] Audit and document the existing assistant and mission gaps.
-- [x] Add typed assessment state, exact opening question, existing/planned paths, and configuration-driven industry branching.
-- [x] Add public URL validation, explicitly limited assessment, pain/goal capture, fact-linked recommendations, and blueprint generation.
-- [x] Add the server-controlled estimator with separate implementation and maintenance outputs and required disclosure.
-- [x] Add the portrait-ready persistent virtual architect and hybrid local/structured-AI interaction model.
-- [x] Add relevant local knowledge retrieval, strict server-validated model output, feature flags, and usage controls.
-- [x] Add validated local/mock lead handling, duplicate blocking, honest email semantics, and safe Codex export.
-- [x] Add architecture, assessment, estimator, lead, export, privacy, portrait, and Project Meter documentation.
-- [x] Complete full automated, build, route, browser, accessibility, HTTP, and secret verification.
-- [x] Reconcile current-truth docs, commit locally, confirm clean worktree, and leave port 3023 running.
+- [x] Read repository instructions, current-truth documents, product specification, implementation, and deployment configuration.
+- [x] Confirm clean worktree, `main`, GitHub origin, repository identity, Vercel project identity, production branch, framework, build commands, root, and output directory.
+- [x] Verify the local project key exists without displaying it and that `.env.local` is ignored and untracked.
+- [x] Run lint, strict typecheck, all tests, tracked/history secret scans, production build, manifest checks, and client-bundle secret scan.
+- [x] Push the verified local commits to GitHub `main`.
+- [x] Store `OPENAI_API_KEY` as a sensitive Production-only Vercel environment variable and redeploy with current project settings.
+- [x] Confirm no conflicting `digitalarchitecture` record, then save only the exact Vercel CNAME in Squarespace.
+- [x] Verify public DNS resolution, Vercel Valid Configuration, HTTPS, 28 routes, API boundaries, desktop/mobile reflow, assistant interface, interactive controls, console health, and deployed secret safety.
+- [x] Update current-truth, backlog, decision, setup, and deployment documentation and push the closeout commit.
 
 ## Verification Evidence
 
 - Lint and strict typecheck passed.
-- 66 tests passed across four files, including all 53 founder acceptance behaviors and mocked AI/lead route tests.
-- Production build passed with 33 generated pages and three dynamic API routes.
-- All 28 public routes returned HTTP 200; invalid API requests failed safely.
-- Desktop and 390×844 mobile browser checks passed, including navigation persistence, blueprint and estimate generation, disclosures, reflow, and a clean post-restart console.
-- `.env.local` remains ignored and untracked; tracked-source and client-bundle secret scans passed.
-- A OneDrive-corrupted generated `.next` cache was preserved under an ignored `.next-one-drive-stale-*` directory before the successful clean rebuild.
+- 66 tests passed across four files.
+- Production build passed with 33 generated pages and three dynamic API routes; `.next/routes-manifest.json` and `.next/BUILD_ID` exist.
+- Tracked source, Git history, local client output, and deployed client assets contain no OpenAI key pattern.
+- Vercel deployment is Ready and uses the correct repository, `main`, Next.js preset, repository root, `npm install`, `npm run build`, and default output directory.
+- CNAME `digitalarchitecture` resolves publicly to `56546e7b60344d4f.vercel-dns-017.com` with TTL 14400 seconds; Vercel reports Valid Configuration.
+- `https://digitalarchitecture.trusted-eco.org` returns 200 over HTTPS and all 28 public routes pass.
+- Malformed assistant, plan, and lead requests return 400. A live assistant request reaches the configured provider and returns the intended safe 503 quota message.
+- Desktop and 390×844 mobile browser checks show one H1, no horizontal overflow, working architecture controls, a responsive assistant panel, and zero console warnings or errors.
 
-## Production Boundaries
+## Remaining Production Limitations
 
-No production deployment, push, database, email provider, calendar, CRM, payment, authentication, upload, browsing, voice, animated likeness, or public Codex connection is part of this plan. The draft estimator, placeholder portrait, privacy language, secure lead architecture, notification provider, and OpenAI quota all require founder or qualified review before public activation.
+OpenAI quota, estimator catalog approval, founder portrait, privacy/legal review, authoritative lead storage, provider-confirmed notifications, retention/recovery, and calendar booking remain founder-level follow-up decisions. Lead submission is disabled and appointments are never confirmed until those systems are approved and implemented.

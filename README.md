@@ -4,7 +4,7 @@ Public marketing website for TRUSTed Digital Architecture, a founder-led digital
 
 ## Maturity
 
-TRUSTed AI Business Architect local review phase. The approved public information architecture now includes a structured, industry-aware business assessment, blueprint, controlled preliminary estimator, and safe human-review handoff.
+Production launch complete. The public information architecture and TRUSTed AI Business Architect are live at `https://digitalarchitecture.trusted-eco.org`, with a structured industry-aware assessment, blueprint, controlled preliminary estimator, and safe human-review handoff.
 
 ## Technology
 
@@ -72,7 +72,9 @@ Non-contact assessment state and recent display messages use session storage for
 
 `/api/architect/plan` generates the blueprint and estimate from deterministic rules. The draft rates in `lib/business-architect-server.ts` are not approved for production. `/api/architect/lead` is disabled unless local test mode is explicitly enabled; it stores nothing and sends no email.
 
-For a future production activation, first approve quota, rates, portrait, privacy/legal language, secure lead storage, notification provider, retention/recovery, and the separate deployment decision. The local `.env.local` file is never deployed by source control.
+Production uses a sensitive Production-only `OPENAI_API_KEY` stored in Vercel. The current OpenAI project reports insufficient quota, so free-form questions return a clear temporary-unavailability response while deterministic assessment choices continue to work. The local `.env.local` file is never deployed by source control.
+
+Secure lead storage, confirmed notification delivery, calendar booking, approved estimator catalog values, founder photography, and qualified privacy/legal review remain separate founder decisions. `/api/architect/lead` therefore remains disabled in production, and no appointment is represented as confirmed.
 
 ## Repository structure
 
@@ -95,7 +97,12 @@ Future sessions begin by reading `AGENTS.md`, `PROJECT_STATUS.md`, `MISSION.md`,
 
 ## Deployment
 
-Vercel uses the repository root, Next.js framework preset, `npm install`, `npm run build`, and the default `.next` output directory. No environment variables or custom-domain changes are configured by this repository.
+Vercel project `trusted-digital-architecture` uses the repository root, Next.js framework preset, `npm install`, `npm run build`, and the default `.next` output directory. Production deploys automatically from GitHub `main`.
 
 - GitHub: `https://github.com/CalebMillsSquad/trusted-digital-architecture`
-- Production: `https://trusted-digital-architecture.vercel.app`
+- Production: `https://digitalarchitecture.trusted-eco.org`
+- Vercel fallback URL: `https://trusted-digital-architecture.vercel.app`
+- Production secret: `OPENAI_API_KEY`, stored only as a sensitive Vercel Production variable
+- DNS: CNAME `digitalarchitecture` to `56546e7b60344d4f.vercel-dns-017.com`, managed at Squarespace with the root domain and all unrelated records preserved
+
+See `docs/DEPLOYMENT.md` for the verified production configuration, validation checklist, and remaining operational limitations.

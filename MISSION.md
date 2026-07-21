@@ -1,34 +1,39 @@
 # Active Mission
 
-Status: Complete — local implementation and verification finished; production activation requires founder decisions
+Status: Complete — production launch verified
 
 ## Mission Title
 
-Founder-Approved TRUSTed AI Business Architect
+Founder-Approved Production Domain and Vercel Launch
 
 ## Objective
 
-Extend the verified public assistant into a hybrid local-and-AI business architecture assessment that learns the business before recommending technology, produces a fact-linked Digital Business Blueprint and controlled preliminary estimate, and prepares a safe human-review handoff without creating contracts, appointments, production records, or work authorization.
+Publish the verified TRUSTed Digital Architecture website from `CalebMillsSquad/trusted-digital-architecture` to the existing Vercel project, activate the approved `digitalarchitecture.trusted-eco.org` subdomain without changing the root domain or unrelated DNS, configure the production OpenAI secret securely, and verify the complete public experience over HTTPS.
 
 ## Approved Scope
 
-- Exact business-type opening question and progressive business, system, operations, pain-point, goal, budget, and timeline discovery.
-- Configuration-driven industry branches and repository-local relevant knowledge retrieval.
-- Safe public-URL normalization and a clearly limited Preliminary Public Website Assessment without live browsing.
-- Deterministic solution mapping, blueprint generation, and a server-controlled rules-based estimator.
-- Portrait-ready responsive virtual architect with session continuity, keyboard access, reduced motion, and honest AI disclosure.
-- One structured, server-validated OpenAI response per free-form interaction; local choices use no model call.
-- Validated local/mock lead workflow, confirmed-status semantics, sanitized Codex-ready export, and documented production boundaries.
-- Environment-configurable usage controls, regression coverage, documentation, local commit, and port 3023 verification.
+- Push the verified `main` branch to the existing GitHub repository.
+- Preserve and use the existing Vercel project `trusted-digital-architecture` with the Next.js preset, repository root, and default output directory.
+- Store `OPENAI_API_KEY` as a sensitive Production-only Vercel environment variable without displaying or committing it.
+- Connect only `digitalarchitecture.trusted-eco.org` using the exact CNAME Vercel requires.
+- Verify Vercel status, DNS validity, HTTPS, all public routes, desktop and mobile rendering, assistant behavior, API errors, console health, and secret safety.
+- Keep lead submission disabled and appointment language non-confirming until real approved infrastructure exists.
 
-## Out of Scope
+## Preserved Boundaries
 
-Production deployment or push; database, CRM, calendar, payments, authentication, uploads, paid providers, unrestricted browsing, live research, voice, generated likeness, animated avatar, autonomous agents, public Codex access, automatic proposals, or client-work authorization.
+- The root domain `trusted-eco.org`, nameservers, Squarespace website records, Google Workspace records, and unrelated DNS remain unchanged.
+- No domain transfer, Cloudflare, custom authentication, database, payment system, CRM, calendar, lead storage, or notification provider was added.
+- No secret is stored in Git, documentation, browser code, or client assets.
+- OpenAI quota failure is acceptable only because the assistant fails safely and visitors can continue the deterministic assessment.
 
 ## Acceptance Criteria
 
-- All 53 founder-required behaviors have automated coverage.
-- Lint, strict typecheck, tests, production build, route checks, desktop/mobile browser checks, HTTP health, and secret scans pass.
-- A sanitized intake is always `NEW — FOUNDER REVIEW REQUIRED` and cannot authorize work.
-- Production-only dependencies and founder decisions are accurately documented.
-- Local site remains available at `http://localhost:3023`; verified changes are committed locally without push or deployment.
+- [x] Lint, strict typecheck, all tests, secret scans, and production build pass.
+- [x] `main` is pushed to `CalebMillsSquad/trusted-digital-architecture`.
+- [x] Vercel is connected to the correct repository and branch with standard Next.js settings.
+- [x] The production secret is saved securely and a fresh production deployment is Ready.
+- [x] The exact Squarespace CNAME is saved without modifying unrelated records.
+- [x] Vercel reports the custom domain as Valid Configuration.
+- [x] HTTPS and all 28 public routes succeed at the production URL.
+- [x] Desktop, mobile, assistant, error handling, console, and deployed secret-safety checks pass.
+- [x] Deployment and repository documentation reflect the verified production state.

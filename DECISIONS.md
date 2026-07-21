@@ -31,3 +31,7 @@ Founder approved securely reusing the project’s ignored `OPENAI_API_KEY` to bu
 ## 2026-07-21 — TRUSTed AI Business Architect
 
 Founder approved evolving the existing assistant into TRUSTed AI Business Architect: a hybrid local-and-AI business assessment that begins with business type, branches by industry and operations, records pain points and goals, generates a Digital Business Blueprint, and uses a controlled rules-based preliminary estimator. The local mission may prepare a validated mock lead and sanitized Codex-ready brief, but it must not add a database, calendar, paid provider, production deployment, unrestricted browsing, or any mechanism that authorizes client work.
+
+## 2026-07-21 — Production subdomain and Vercel activation
+
+Founder approved deploying the verified website from `CalebMillsSquad/trusted-digital-architecture` to the existing Vercel project `trusted-digital-architecture` and launching it at `digitalarchitecture.trusted-eco.org`. The root `trusted-eco.org` domain, nameservers, current website, Google Workspace, and unrelated DNS must remain unchanged. Only the Vercel-required `digitalarchitecture` CNAME is authorized. Founder also approved storing the existing project `OPENAI_API_KEY` as a sensitive Production-only Vercel environment variable, with safe temporary-unavailability behavior allowed while quota is unavailable. Lead storage, confirmed email delivery, and calendar booking remain unapproved and disabled.
