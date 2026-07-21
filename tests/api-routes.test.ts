@@ -43,4 +43,10 @@ describe("mocked AI and lead API boundaries", () => {
     const response = await leadPost(new Request("http://localhost/api/architect/lead", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ name: "Test Person", businessName: "Mock Business B", email: "test-b@example.com", consent: true, privacyConsent: true, assessment, ...plan }) }));
     expect(response.status).toBe(503); expect((await response.json()).error).toContain("not configured");
   });
+
+  it("rejects the lead honeypot without creating a lead", async () => {
+    const plan = createPlan(assessment);
+    const response = await leadPost(new Request("http://localhost/api/architect/lead", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ name: "Test Person", businessName: "Mock Business Trap", email: "trap@example.com", website: "https://bot.example", consent: true, privacyConsent: true, assessment, ...plan }) }));
+    expect(response.status).toBe(400); expect((await response.json()).error).toContain("could not be validated");
+  });
 });

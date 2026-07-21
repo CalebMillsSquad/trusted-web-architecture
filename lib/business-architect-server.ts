@@ -60,7 +60,7 @@ export function createPlan(state: AssessmentState) {
   return { blueprint, estimate: calculateEstimate(blueprint.recommendations) };
 }
 
-export type LeadInput = { name: string; businessName: string; email: string; phone?: string; consent: boolean; privacyConsent: boolean; assessment: AssessmentState; blueprint: DigitalBlueprint; estimate: PreliminaryEstimate };
+export type LeadInput = { name: string; businessName: string; email: string; phone?: string; consent: boolean; privacyConsent: boolean; consentVersion: string; consentedAt: string; assessment: AssessmentState; blueprint: DigitalBlueprint; estimate: PreliminaryEstimate };
 
 const clean = (value: string, max: number) => value.replace(/[<>\u0000-\u001f]/g, " ").replace(/\s+/g, " ").trim().slice(0, max);
 export function validateLead(value: unknown): { ok: true; lead: LeadInput } | { ok: false; error: string } {
@@ -70,10 +70,12 @@ export function validateLead(value: unknown): { ok: true; lead: LeadInput } | { 
   const businessName = typeof raw.businessName === "string" ? clean(raw.businessName, 140) : "";
   const email = typeof raw.email === "string" ? clean(raw.email.toLowerCase(), 200) : "";
   const phone = typeof raw.phone === "string" ? clean(raw.phone, 40) : "";
+  const honeypot = typeof (raw as { website?: unknown }).website === "string" ? (raw as { website: string }).website.trim() : "";
+  if (honeypot) return { ok: false, error: "Lead information could not be validated." };
   if (name.length < 2 || businessName.length < 2 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return { ok: false, error: "Name, business name, and a valid email are required." };
   if (raw.consent !== true || raw.privacyConsent !== true) return { ok: false, error: "Contact and privacy consent are required." };
   if (!raw.assessment || !raw.blueprint || !raw.estimate) return { ok: false, error: "Complete the assessment before submitting." };
-  return { ok: true, lead: { name, businessName, email, phone, consent: true, privacyConsent: true, assessment: raw.assessment, blueprint: raw.blueprint, estimate: raw.estimate } };
+  return { ok: true, lead: { name, businessName, email, phone, consent: true, privacyConsent: true, consentVersion: "public-intake-v1", consentedAt: new Date().toISOString(), assessment: raw.assessment, blueprint: raw.blueprint, estimate: raw.estimate } };
 }
 
 export function createLeadId(now = new Date(), seed: string = randomUUID()) { return `TDA-${now.getUTCFullYear()}-${createHash("sha256").update(seed).digest("hex").slice(0, 5).toUpperCase()}`; }
