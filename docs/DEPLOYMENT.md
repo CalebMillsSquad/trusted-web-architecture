@@ -18,8 +18,8 @@ Last verified: 2026-07-21
 - Build command: `npm run build`
 - Output directory: Next.js default; no override
 - Production deployment source: GitHub `main`
-- Latest verified production commit: `5923246ae7676201fe5784bf42b950ea470b8311`
-- Latest verified Vercel deployment: `4viQ6V9QYNWd8LXRVQ39stuwQDYj` (Ready)
+- Latest verified production commit: `136e0db7d9191a1bdacf7da0c7e53e4cb44ca6a9`
+- Latest verified Vercel deployment: `EXPevnt9SVhG9mnNfGCik1tD6kAd` (Ready)
 - `OPENAI_API_KEY`: sensitive, Production-only Vercel environment variable
 - No lead, calendar, database, payment, authentication, or third-party notification environment variables are configured.
 
