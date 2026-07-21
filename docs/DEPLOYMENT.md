@@ -18,6 +18,8 @@ Last verified: 2026-07-21
 - Build command: `npm run build`
 - Output directory: Next.js default; no override
 - Production deployment source: GitHub `main`
+- Latest verified production commit: `5923246ae7676201fe5784bf42b950ea470b8311`
+- Latest verified Vercel deployment: `4viQ6V9QYNWd8LXRVQ39stuwQDYj` (Ready)
 - `OPENAI_API_KEY`: sensitive, Production-only Vercel environment variable
 - No lead, calendar, database, payment, authentication, or third-party notification environment variables are configured.
 
@@ -51,6 +53,9 @@ Only this custom record was added. Squarespace website records, `www`, Domain Co
 - The deterministic assessment remains usable during provider unavailability.
 - Lead submission remains disabled because secure authoritative storage and confirmed email delivery are not implemented.
 - No appointment is scheduled or confirmed because no calendar is connected.
+- `/robots.txt` and `/sitemap.xml` return HTTP 200 and advertise the custom HTTPS origin.
+- Production responses include `Strict-Transport-Security`, `X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy`, and `X-Frame-Options` headers.
+- Vercel Web Analytics and Speed Insights remain intentionally disabled; no analytics or error-monitoring provider is configured.
 
 ## Operational Limitations
 
