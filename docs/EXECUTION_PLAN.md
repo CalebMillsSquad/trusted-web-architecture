@@ -1,78 +1,34 @@
 # Execution Plan
 
-Last updated: 2026-07-20
+Last updated: 2026-07-21
 
 ## Active Mission
 
-Founder-Approved Public AI Website Assistant MVP
+Founder-Approved TRUSTed AI Business Architect
 
-## Repository Observations
+## Milestones
 
-- The website is a statically generated Next.js public site with a shared root layout, making a site-wide assistant widget straightforward without route duplication.
-- The founder approved reuse of an existing key in ignored `.env.local`; no secret value was read or displayed.
-- Approved public content is already centralized and can ground the assistant without a database or retrieval provider.
-- No calendar, CRM, intake storage, or authentication system exists.
-- The selected OpenAI API project currently returns `insufficient_quota`, so successful live-response validation requires an account-side quota change.
+- [x] Audit and document the existing assistant and mission gaps.
+- [x] Add typed assessment state, exact opening question, existing/planned paths, and configuration-driven industry branching.
+- [x] Add public URL validation, explicitly limited assessment, pain/goal capture, fact-linked recommendations, and blueprint generation.
+- [x] Add the server-controlled estimator with separate implementation and maintenance outputs and required disclosure.
+- [x] Add the portrait-ready persistent virtual architect and hybrid local/structured-AI interaction model.
+- [x] Add relevant local knowledge retrieval, strict server-validated model output, feature flags, and usage controls.
+- [x] Add validated local/mock lead handling, duplicate blocking, honest email semantics, and safe Codex export.
+- [x] Add architecture, assessment, estimator, lead, export, privacy, portrait, and Project Meter documentation.
+- [x] Complete full automated, build, route, browser, accessibility, HTTP, and secret verification.
+- [x] Reconcile current-truth docs, commit locally, confirm clean worktree, and leave port 3023 running.
 
-## Implementation Sequence
+## Verification Evidence
 
-1. Verify secret presence and Git exclusion without displaying the value.
-2. Add the official OpenAI Node SDK and current Responses API integration.
-3. Add bounded request validation, grounded instructions, claim guardrails, rate limiting, no-store behavior, safe identifiers, and safe errors.
-4. Add the accessible responsive widget, suggestions, loading/errors, disclosure, and appointment email handoff.
-5. Update privacy/terms content and durable repository documentation.
-6. Add contract and prompt-guardrail tests.
-7. Run lint, strict typecheck, tests, build, API tests, route smoke checks, and responsive browser checks.
-8. Leave the local site running and report the exact account and founder decisions needed for production activation.
+- Lint and strict typecheck passed.
+- 66 tests passed across four files, including all 53 founder acceptance behaviors and mocked AI/lead route tests.
+- Production build passed with 33 generated pages and three dynamic API routes.
+- All 28 public routes returned HTTP 200; invalid API requests failed safely.
+- Desktop and 390×844 mobile browser checks passed, including navigation persistence, blueprint and estimate generation, disclosures, reflow, and a clean post-restart console.
+- `.env.local` remains ignored and untracked; tracked-source and client-bundle secret scans passed.
+- A OneDrive-corrupted generated `.next` cache was preserved under an ignored `.next-one-drive-stale-*` directory before the successful clean rebuild.
 
-## Dependencies
+## Production Boundaries
 
-- Existing Next.js/React/TypeScript application
-- OpenAI Node SDK
-- Ignored local `OPENAI_API_KEY`
-- OpenAI API quota for successful live-response validation
-- Port `3023`
-
-## Risks
-
-- A public endpoint can create unbounded cost; bounded history, output limits, and best-effort rate limiting reduce but do not eliminate abuse risk.
-- Serverless in-memory rate limiting is instance-local and is not sufficient for high-volume production protection.
-- Assistant messages leave the website for OpenAI processing; clear notice and qualified privacy review are required.
-- Model output may be wrong despite grounding, so unsupported claims, high-impact advice, and appointment confirmation must be explicitly prohibited.
-- Production needs a separately configured Vercel secret; `.env.local` is local only.
-
-## Validation Plan
-
-- Secret presence and `git check-ignore` without value output
-- Request parser and prompt-guardrail unit tests
-- Invalid-request and quota-error API tests
-- Successful live API response after quota is available
-- Lint, strict typecheck, tests, and production build
-- Public-route HTTP smoke checks
-- Widget open/close, suggestion, submit, error, appointment disclosure, mobile/tablet/desktop reflow, and console checks
-
-## Progress Checklist
-
-- [x] Verify key presence and Git exclusion
-- [x] Confirm current OpenAI model and Responses API guidance
-- [x] Add server-side assistant route and grounded instructions
-- [x] Add responsive accessible assistant widget
-- [x] Add privacy/terms and appointment limitations
-- [x] Add assistant regression tests
-- [x] Complete final automated and production build validation
-- [x] Complete route and responsive browser verification
-- [ ] Verify a successful model reply after quota is available
-- [x] Reconcile final status and founder handoff
-
-## Discovered Issues
-
-- Resolved: Vitest 3.2.4 carried a critical advisory; upgraded to a compatible patched release.
-- Blocking live response: the selected OpenAI project returns `429 insufficient_quota`.
-- Known: Next.js transitively includes two moderate PostCSS advisories with no safe compatible automated fix.
-
-## Decisions Needed
-
-- Add API quota or credits to the selected OpenAI Platform project.
-- Approve privacy/legal wording before production activation.
-- Select a real calendar provider and booking rules before automated appointment confirmation.
-- Approve Vercel secret configuration and production deployment after review.
+No production deployment, push, database, email provider, calendar, CRM, payment, authentication, upload, browsing, voice, animated likeness, or public Codex connection is part of this plan. The draft estimator, placeholder portrait, privacy language, secure lead architecture, notification provider, and OpenAI quota all require founder or qualified review before public activation.

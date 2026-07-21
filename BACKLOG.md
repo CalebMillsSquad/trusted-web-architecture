@@ -1,33 +1,24 @@
 # Backlog
 
-## Now
+## Now — Active Mission
 
-- Add quota or credits to the selected OpenAI API project and verify a real grounded response.
-- Complete founder review of assistant tone, design, disclosures, and appointment handoff.
-- Obtain qualified privacy/legal review before production activation.
+- Founder review of the completed local TRUSTed AI Business Architect experience and decisions on portrait, estimator rates, privacy/legal wording, secure lead storage, notification provider, and OpenAI quota.
 
-## Next
+## Next Ready Mission
 
-- Select and approve a calendar provider, account, booking rules, availability source, timezone behavior, notifications, privacy terms, and human escalation process.
-- Implement real appointment scheduling only after that architecture is approved.
-- Configure `OPENAI_API_KEY` securely in Vercel and deploy only after explicit founder approval.
+- After founder approvals, implement the approved secure production lead record and provider-confirmed notification workflow, then repeat privacy, security, cost, and deployment-readiness review.
 
 ## Later
 
-- Add a measured assistant evaluation set covering service routing, unsupported claims, sensitive-data handling, appointment language, and human escalation.
-- Evaluate privacy-respecting assistant analytics only after data ownership, retention, consent, and provider choices are approved.
-- Add approved CRM or intake handoff only through a separate secure-integration mission.
-- Perform dependency maintenance when an upstream compatible Next.js/PostCSS update is available.
+- Add provider-confirmed email notifications and authoritative lead storage only after founder approval of privacy, retention, recovery, and cost.
+- Add a bounded public website analysis tool only after source, network, SSRF, citation, and retention controls are approved.
+- Implement a calendar only after provider, booking rules, timezone, privacy, and human-escalation approval.
+- Build a Project Meter only as a separate authenticated internal product mission.
 
 ## Deferred
 
-- Database-backed chat history, uploads, authentication, payments, private portals, and autonomous external actions.
-- Rename the local directory after the active workspace releases its Windows handle.
-- Connect a custom domain or change DNS.
+- CRM, payments, authentication, uploads, voice, animated likeness, unrestricted browsing, autonomous agents, and production deployment.
 
 ## Rejected or Superseded
 
-- Claiming that an appointment is scheduled before a real calendar confirms it.
-- Exposing the OpenAI API key to browser code or source control.
-- Presenting the assistant as a general-purpose expert outside approved TRUSTed Digital Architecture knowledge.
-- Temporary ChatGPT Site hosting.
+- Generic chatbot-first intake, model-generated pricing, invented research/findings, unconfirmed appointments or email delivery, Git-stored visitor data, and automatic client-work authorization.

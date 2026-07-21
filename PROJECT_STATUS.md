@@ -1,81 +1,64 @@
 # Project Status
 
-Last updated: 2026-07-20
-
-## Product
-
-TRUSTed Digital Architecture is a founder-led public website for premium website architecture, custom software, AI-system planning, automation, integrations, learning platforms, and connected business systems. A grounded AI website assistant is now being added as a public guidance experience.
+Last updated: 2026-07-21
 
 ## Current Phase
 
-AI Assistant MVP
+TRUSTed AI Business Architect — local mission complete; founder review ready
 
-## Active Mission
+## Current Application Status
 
-Founder-Approved Public AI Website Assistant MVP
+The 28-route TRUSTed Digital Architecture public website now includes a local founder-mission implementation of TRUSTed AI Business Architect. The guided assessment works without model calls, preserves non-contact state across internal navigation, branches by industry, records systems, pain points, and goals, and generates a deterministic blueprint and preliminary estimate.
 
-## Current Milestone
+## What Works
 
-Founder review and OpenAI API quota activation.
+- Exact founder-required first substantive business-type question
+- Existing and planned business paths, configurable industry branches, multi-select system/pain/goal discovery, and public URL normalization
+- Clearly limited Preliminary Public Website Assessment with no invented scan or unrestricted browsing
+- Fact-linked recommendation engine, Digital Business Blueprint, roadmap, unknowns, and careful operational-benefit language
+- Server-controlled draft rate catalog with separate implementation and maintenance ranges and required disclosure
+- Responsive portrait-ready virtual architect, side panel on desktop, full-height mobile panel, keyboard semantics, reduced motion, and session continuity
+- One strict-schema Responses API call per free-form interaction; deterministic choices create no OpenAI request
+- Environment-configurable feature flags, session/IP/cooldown/timeout limits, safe errors, and protected server-only key
+- Validated local/mock lead workflow, duplicate blocking, honest email status, sanitized Codex brief, and `NEW — FOUNDER REVIEW REQUIRED` guardrail
+- Repository-local relevant knowledge and complete architecture, assessment, estimator, lead, export, privacy, portrait, and Project Meter documentation
 
-## Overall Mission Progress
+## Incomplete / Production Blockers
 
-The local assistant MVP is implemented and verified. A successful live model reply remains blocked by insufficient quota on the selected OpenAI API project.
-
-## Verified Working
-
-- Existing 28-route public website and production-readiness foundation
-- `OPENAI_API_KEY` detected in ignored `.env.local` without exposing its value
-- Server-only Responses API route with bounded messages, best-effort rate limiting, safe errors, `store: false`, and a pseudonymous safety identifier
-- Grounded assistant instructions covering approved services, solutions, products, process, claim limits, and human escalation
-- Site-wide accessible assistant widget with appointment-request email handoff
-- Assistant privacy, sensitive-data, professional-advice, and appointment disclosures
-- Request parsing and guardrail regression tests
-- Lint, strict typecheck, 9 tests, production build, all 28 public-route HTTP checks, and desktop/mobile browser checks
-- Safe `400` invalid-request and `503` provider-quota responses without key or provider-detail exposure
-- Local development server running at `http://localhost:3023`
-
-## In Progress
-
-- Founder review of assistant tone, placement, disclosures, and handoff experience
-
-## Remaining
-
-- Add API billing or quota to the selected OpenAI Platform project, then verify a real assistant response
-- Qualified privacy/legal review before production activation
-- Founder decision on a calendar provider and booking workflow before appointment confirmation can be automated
-- Founder approval before pushing the existing local commits to `main`, configuring the production secret in Vercel, and deploying
-
-## Known Issues
-
-- **Blocking live AI:** OpenAI returns `429 insufficient_quota` for the selected project. The key is recognized, but the project needs available API quota or credits.
-- **Expected limitation:** Appointment requests use email; no calendar is connected and no appointment is automatically confirmed.
-- **Low:** Contact and website-audit forms remain intentionally non-functional previews.
-- **Low:** Two moderate PostCSS advisories remain inherited through Next.js; the suggested forced fix would install an incompatible Next.js version.
-- **Review required:** Assistant privacy and terms wording require qualified review before public activation.
-
-## Blockers
-
-The selected OpenAI API project needs available quota or credits before a real assistant reply can be verified. Production activation also requires founder approval, Vercel secret configuration, and privacy review.
+- OpenAI project quota currently prevents a verified live model reply; mocked structured-response tests cover the contract.
+- Estimator catalog values are local draft assumptions and are not founder-approved for production.
+- No approved secure lead database or confirmed email provider exists; production submission remains disabled.
+- Portrait is a neutral placeholder pending founder-approved photography.
+- Privacy/legal language and production retention design require qualified review.
+- No calendar is connected; appointments are never confirmed by the assistant.
+- No push or deployment is authorized in this mission.
 
 ## Verification Status
 
 - Lint: pass
-- Typecheck: pass
-- Tests: pass — 2 files, 9 tests
-- Production build: pass — 31 static pages plus dynamic `/api/assistant`
-- API validation: safe `insufficient_quota` path verified; successful model reply blocked
-- Route smoke: pass — 28/28 public routes returned HTTP 200 with correct branding
-- Browser smoke: pass — desktop and 390 x 844 mobile layouts, disclosures, safe error state, no horizontal overflow, and no console warnings/errors
+- Strict typecheck: pass
+- Tests: pass — 4 files, 66 tests, including all 53 founder acceptance behaviors and mocked provider/lead routes
+- Production build: pass — 33 generated pages and three dynamic API routes
+- HTTP routes: pass — 28/28 public routes returned 200 with TRUSTed branding
+- Browser: pass — desktop guided flow, 390×844 mobile reflow, session persistence across navigation, blueprint, estimate, disclosures, no horizontal overflow, and clean post-restart console
+- API boundaries: pass — invalid assistant and lead requests return safe 400 responses; mocked structured responses and local email success/failure paths pass
+- Secret safety: pass — `.env.local` is ignored and untracked; tracked source and `.next/static` scans found no API key pattern
+- Repository health: `git diff --check` pass; verified mission is committed locally and the final SHA is recorded in the completion report
 
 ## Local Development
 
-- Run command: `npm run dev`
-- Assigned port: `3023`
-- Local URL: `http://localhost:3023`
-- Required assistant secret: `OPENAI_API_KEY` in ignored `.env.local`
-- Launcher: `START_APP.bat` is present; `STOP_APP.bat` stops only a verified project process
+- Command: `npm run dev`
+- URL: `http://localhost:3023`
+- Key: present in ignored `.env.local` without being displayed
 
-## Next Internal Milestone
+## Last Completed Mission
 
-Add OpenAI API quota or credits, verify a successful grounded reply, complete founder and privacy review, then request production activation approval.
+Grounded public AI website assistant MVP (`8dba96a`).
+
+## Current Active Mission
+
+Founder review and production-readiness decisions for portrait, pricing assumptions, privacy, lead infrastructure, notifications, and quota.
+
+## Next Ready Mission
+
+Founder review and a production-readiness decision package for portrait, rates, privacy, lead storage, notifications, and quota.

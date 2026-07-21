@@ -4,7 +4,7 @@ Public marketing website for TRUSTed Digital Architecture, a founder-led digital
 
 ## Maturity
 
-AI Assistant MVP phase. The approved public information architecture and production-readiness foundation are implemented; the current mission adds a grounded site-wide assistant with an honest appointment-request handoff.
+TRUSTed AI Business Architect local review phase. The approved public information architecture now includes a structured, industry-aware business assessment, blueprint, controlled preliminary estimator, and safe human-review handoff.
 
 ## Technology
 
@@ -23,7 +23,7 @@ AI Assistant MVP phase. The approved public information architecture and product
 - npm
 - Port `3023` available for local development
 
-The website itself requires no database. The AI assistant requires `OPENAI_API_KEY` in ignored `.env.local`. Copy `.env.example` to `.env.local` and supply the key securely; never commit or expose it to browser code.
+The website requires no database. Free-form AI questions require `OPENAI_API_KEY` in ignored `.env.local`; the guided assessment, blueprint, and estimator are deterministic. Copy `.env.example` to `.env.local` and supply secrets securely; never commit or expose them to browser code.
 
 ## Install and run
 
@@ -64,21 +64,25 @@ npm start
 
 Contact and website-audit forms are explicitly non-functional previews. Authentication, databases, payments, uploads, backend services, and live external integrations are outside the current product boundary.
 
-## AI website assistant
+## TRUSTed AI Business Architect
 
-The site-wide assistant calls `/api/assistant`, which uses the OpenAI Responses API on the server. It is grounded in approved website content, bounds conversation length, limits response size, uses best-effort instance-local rate limiting, sends a pseudonymous safety identifier, and sets `store: false`.
+The site-wide virtual architect begins with the visitor’s business type and progressively records business stage, offering, current systems, an industry-specific operations branch, pain points, goals, public website status, considered capabilities, budget, and timeline. Structured choices are local; free-form questions call `/api/assistant` once and receive a strict server-validated response grounded in relevant repository knowledge.
 
-The website does not write chat transcripts to a database or browser storage. Messages are sent to OpenAI for processing, so visitors are instructed not to submit sensitive or confidential information. Appointment requests use a pre-addressed email handoff; no appointment is confirmed until a human responds, and no calendar integration is currently connected.
+Non-contact assessment state and recent display messages use session storage for same-tab navigation continuity. Contact fields are not persisted in the browser. Free-form messages are sent to OpenAI with application storage disabled, so visitors are instructed not to submit sensitive or confidential information. No appointment, project acceptance, price, or email delivery is confirmed without a human response.
 
-For a production deployment, configure `OPENAI_API_KEY` in Vercel through an approved secure workflow. The local `.env.local` file is not deployed.
+`/api/architect/plan` generates the blueprint and estimate from deterministic rules. The draft rates in `lib/business-architect-server.ts` are not approved for production. `/api/architect/lead` is disabled unless local test mode is explicitly enabled; it stores nothing and sends no email.
+
+For a future production activation, first approve quota, rates, portrait, privacy/legal language, secure lead storage, notification provider, retention/recovery, and the separate deployment decision. The local `.env.local` file is never deployed by source control.
 
 ## Repository structure
 
 - `app/` — App Router layout, homepage, catch-all public route, and styles
-- `components/` — shared site shell and editorial page renderer
+- `components/` — shared site shell, editorial renderer, and virtual business architect
+- `knowledge/` — controlled repository-local company and industry knowledge
+- `lib/business-architect-*.ts` — typed assessment, recommendations, blueprint, estimator, lead validation, and usage controls
 - `lib/site-content.ts` — centralized typed navigation and page content
 - `tests/` — route and content regression tests
-- `docs/` — founder-approved specification and living execution plan
+- `docs/` — founder specification, execution plan, audit, architecture, assessment, estimator, lead, export, privacy, portrait, and Project Meter notes
 - `AGENTS.md` — permanent autonomous operating contract
 - `MISSION.md` — one active product-quality mission
 - `PROJECT_STATUS.md` — current verified state

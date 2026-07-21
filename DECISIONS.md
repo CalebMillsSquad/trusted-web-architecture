@@ -27,3 +27,7 @@ Founder approved a durable repository operating system centered on `AGENTS.md`, 
 ## 2026-07-20 — Public AI website assistant
 
 Founder approved securely reusing the project’s ignored `OPENAI_API_KEY` to build a public AI website assistant. The assistant may answer website questions and guide appointment requests, but it must not claim that an appointment is scheduled or confirmed until a real calendar connection is implemented and verified.
+
+## 2026-07-21 — TRUSTed AI Business Architect
+
+Founder approved evolving the existing assistant into TRUSTed AI Business Architect: a hybrid local-and-AI business assessment that begins with business type, branches by industry and operations, records pain points and goals, generates a Digital Business Blueprint, and uses a controlled rules-based preliminary estimator. The local mission may prepare a validated mock lead and sanitized Codex-ready brief, but it must not add a database, calendar, paid provider, production deployment, unrestricted browsing, or any mechanism that authorizes client work.

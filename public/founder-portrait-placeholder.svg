@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Founder portrait placeholder</title><desc id="desc">A neutral architectural silhouette, not a likeness.</desc>
+  <rect width="240" height="240" fill="#0d3a30"/><path d="M20 200h200M40 220V42M80 220V22M120 220V42M160 220V22M200 220V42" stroke="#b98b42" opacity=".22"/>
+  <circle cx="120" cy="88" r="39" fill="#e5d8bd" opacity=".9"/><path d="M52 220c6-58 28-91 68-91s62 33 68 91" fill="#e5d8bd" opacity=".9"/>
+  <circle cx="120" cy="120" r="104" fill="none" stroke="#c69a4b" opacity=".65"/><path d="M27 120h186M120 27v186" stroke="#c69a4b" opacity=".28"/>
+</svg>
