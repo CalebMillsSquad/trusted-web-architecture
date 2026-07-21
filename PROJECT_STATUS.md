@@ -38,8 +38,8 @@ The 28-route TRUSTed Digital Architecture public website is live on the existing
 
 - Lint: pass
 - Strict typecheck: pass
-- Tests: pass — 4 files, 66 tests
-- Production build: pass — 33 generated pages and three dynamic API routes; `.next/routes-manifest.json` present
+- Tests: pass — 4 files, 67 tests
+- Production build: pass — 35 generated pages and three dynamic API routes; `.next/routes-manifest.json` present
 - Secret scans: pass — tracked source, repository history, local client bundle, and deployed client assets contain no OpenAI key pattern; `.env.local` remains ignored and untracked
 - Vercel: pass — production deployment Ready with the correct GitHub repository, `main` branch, Next.js preset, repository root, default output directory, and production-only sensitive key
 - DNS: pass — CNAME `digitalarchitecture` points to `56546e7b60344d4f.vercel-dns-017.com` with TTL 4 hours; Vercel reports Valid Configuration
